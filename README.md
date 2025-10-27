@@ -21,8 +21,28 @@ Complete guide for setting up RTMP streaming with MediaMTX and ffmpeg for the Be
    ```
 
 2. **MediaMTX** server
-   - Download from: https://github.com/bluenviron/mediamtx
-   - Or build from source
+
+   **Option A: Download Pre-built Binary (Recommended)**
+
+   ```bash
+   # macOS
+   wget https://github.com/bluenviron/mediamtx/releases/latest/download/mediamtx_v1.5.1_darwin_amd64.zip
+   unzip mediamtx_v1.5.1_darwin_amd64.zip
+
+   # Ubuntu/Linux (amd64)
+   wget https://github.com/bluenviron/mediamtx/releases/latest/download/mediamtx_v1.5.1_linux_amd64.tar.gz
+   tar -xzf mediamtx_v1.5.1_linux_amd64.tar.gz
+   ```
+
+   **Option B: Clone and Build from Source**
+
+   ```bash
+   git clone https://github.com/bluenviron/mediamtx.git
+   cd mediamtx
+   make
+   ```
+
+   Then run: `./mediamtx`
 
 ## Quick Start
 
